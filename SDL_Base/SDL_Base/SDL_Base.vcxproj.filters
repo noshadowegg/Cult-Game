@@ -44,5 +44,8 @@
     <ClInclude Include="GlobalCult.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="MasterInclude.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
