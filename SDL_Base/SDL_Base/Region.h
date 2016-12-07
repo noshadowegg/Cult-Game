@@ -7,5 +7,7 @@ public:
 
 	Region();
 	~Region();
+
+	string provideRegionInformation();
 };
 

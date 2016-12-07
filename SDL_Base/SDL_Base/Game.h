@@ -10,6 +10,6 @@ public:
 
 	int Initialise();
 
-	//World gameWorld;
+	void displayRegionInformation(int whichRegion);
 };
 

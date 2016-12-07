@@ -9,5 +9,7 @@ public:
 	
 	World();
 	~World();
+
+	string getRegionInformation(int whichRegion);
 };
 
