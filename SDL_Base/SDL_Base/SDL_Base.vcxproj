@@ -72,6 +72,10 @@
     <ClCompile Include="GlobalCult.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Region.cpp" />
+    <ClCompile Include="regionCult.cpp" />
+    <ClCompile Include="Resource.cpp" />
+    <ClCompile Include="Statistic.cpp" />
+    <ClCompile Include="trait.cpp" />
     <ClCompile Include="World.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -79,6 +83,10 @@
     <ClInclude Include="GlobalCult.h" />
     <ClInclude Include="MasterInclude.h" />
     <ClInclude Include="Region.h" />
+    <ClInclude Include="regionCult.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="Statistic.h" />
+    <ClInclude Include="trait.h" />
     <ClInclude Include="World.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -3,11 +3,11 @@
 class Region
 {
 public:
-	int Initialise();
+	int Initialise(string);
 
 	Region();
 	~Region();
 
-	string provideRegionInformation();
+	void report();
 };
 

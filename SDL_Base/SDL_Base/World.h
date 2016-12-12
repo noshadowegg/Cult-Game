@@ -10,6 +10,6 @@ public:
 	World();
 	~World();
 
-	string getRegionInformation(int whichRegion);
+	void getRegionInformation(int whichRegion);
 };
 

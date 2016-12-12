@@ -1,7 +1,7 @@
 using namespace std;
 #include "World.h"
 
-Region regionList[2];
+vector<Region> regionList;
 
 int World::Initialise()
 {
@@ -12,14 +12,24 @@ int World::Initialise()
 		Region region1;
 		Region region2;
 
-		regionList[0]=region1;
-		regionList[1]=region2;
+		
+		region1.Initialise("adsasdsa");
+		regionList.push_back(region1);
 
-		for each (Region reg in regionList)
+		region2.Initialise("dsadasddsgf");	
+		regionList.push_back(region2);
+
+		regionList.at(0).report();
+		regionList.at(1).report();
+
+
+
+		/*for each (Region reg in regionList)
 		{
 			reg.Initialise();
-		}
-
+		}*/
+		
+		
 
 	cout<<"World created"<<endl;
 
@@ -35,7 +45,7 @@ World::~World()
 {
 }
 
-string World::getRegionInformation(int whichRegion)
+void World::getRegionInformation(int whichRegion)
 {
-	return regionList[whichRegion].provideRegionInformation();
+	 regionList[whichRegion].report();
 }

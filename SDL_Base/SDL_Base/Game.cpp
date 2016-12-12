@@ -9,15 +9,15 @@ int Game::Initialise()
 		gameWorld.Initialise();
 
 		cout<<"Game created"<<endl;
-		displayRegionInformation(1);
-		displayRegionInformation(2);
+		//displayRegionInformation(-1);
+		//displayRegionInformation(452245);
 
 		return 0;
 }
 
 void Game::displayRegionInformation(int whichRegion)
 {
-	cout << gameWorld.getRegionInformation(whichRegion) << endl;
+	gameWorld.getRegionInformation(whichRegion);
 }
 
 Game::Game()
