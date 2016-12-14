@@ -1,23 +1,8 @@
 using namespace std;
 #include "Region.h"
-#include "regionCult.h"
-#include "trait.h"
 
 
-string regionName;
-regionCult cult;
-trait traitList[10];
 
-int basePopulation;
-int population;
-int baseInfrastructure = 0;
-int infrastructure = 0;
-int baseStrength;
-int strength;
-int baseStability;
-int stability;
-int baseWealth;
-int wealth;
 
 int Region:: Initialise(string name)
 {
