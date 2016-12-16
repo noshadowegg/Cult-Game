@@ -5,7 +5,9 @@
 class Region
 {
 public:
-	int Initialise(string);
+	int Initialise();
+
+	Region(string,int,int,int,int,int);
 
 	Region();
 	~Region();

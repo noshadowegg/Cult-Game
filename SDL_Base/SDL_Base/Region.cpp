@@ -4,18 +4,11 @@ using namespace std;
 
 
 
-int Region:: Initialise(string name)
+int Region:: Initialise()
 {
 	
 	cout<<"Region created"<<endl;
 
-	regionName = name;
-	basePopulation = 9;
-	baseInfrastructure = rand();
-	baseStrength = 13;
-	baseStability = 15;
-	baseWealth = 21;
-	
 	population = basePopulation;
 	infrastructure = baseInfrastructure;
 	strength = baseStrength;
@@ -25,11 +18,19 @@ int Region:: Initialise(string name)
 	return 0;
 }
 
-Region::Region()
+Region::Region(string name,int pop,int infr,int str,int stab,int wlth)
 {
-	
+	regionName = name;
+	basePopulation = pop;
+	baseInfrastructure = infr;
+	baseStrength = str;
+	baseStability = stab;
+	baseWealth = wlth;
 }
 
+Region::Region()
+{
+}
 
 Region::~Region()
 {

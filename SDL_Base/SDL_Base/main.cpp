@@ -7,6 +7,7 @@ int main( int argc, char* args[] )
 		//Quit SDL SDL_Quit(); 
 
 
+
 		Game mainGame;
 		mainGame.Initialise();
 
