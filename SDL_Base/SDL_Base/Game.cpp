@@ -7,10 +7,13 @@ World gameWorld;
 int Game::Initialise()
 {
 		gameWorld.Initialise();
-
 		cout<<"Game created"<<endl;
-		//displayRegionInformation(-1);
-		//displayRegionInformation(452245);
+		displayRegionInformation(0);
+		displayRegionInformation(1);
+		displayRegionInformation(2);
+		displayRegionInformation(3);
+		displayRegionInformation(4);
+		displayRegionInformation(5);
 
 		return 0;
 }

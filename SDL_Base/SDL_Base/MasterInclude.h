@@ -7,3 +7,4 @@
 #include "SDL.h" 
 #include <vector>
 #include <sstream>
+#include <cstdio>

@@ -7,7 +7,7 @@ using namespace std;
 int Region:: Initialise()
 {
 	
-	cout<<"Region created"<<endl;
+	cout<<"Region '"<< regionName <<"' created"<<endl;
 
 	population = basePopulation;
 	infrastructure = baseInfrastructure;

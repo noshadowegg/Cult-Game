@@ -20,12 +20,16 @@ public:
 
 	int basePopulation;
 	int population;
+
 	int baseInfrastructure;
 	int infrastructure;
+
 	int baseStrength;
 	int strength;
+
 	int baseStability;
 	int stability;
+
 	int baseWealth;
 	int wealth;
 };
