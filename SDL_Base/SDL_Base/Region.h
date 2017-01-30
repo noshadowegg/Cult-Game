@@ -7,7 +7,7 @@ class Region
 public:
 	int Initialise();
 
-	Region(string,int,int,int,int,int);
+	Region(string,int,int,int,int,int,int);
 
 	Region();
 	~Region();
@@ -32,5 +32,8 @@ public:
 
 	int baseWealth;
 	int wealth;
+
+	int baseSeats;
+	int seats;
 };
 

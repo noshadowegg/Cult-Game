@@ -1,9 +1,6 @@
 using namespace std;
 #include "Region.h"
 
-
-
-
 int Region:: Initialise()
 {
 	
@@ -14,11 +11,12 @@ int Region:: Initialise()
 	strength = baseStrength;
 	stability = baseStability;
 	wealth = baseWealth;
+	seats = baseSeats;
 
 	return 0;
 }
 
-Region::Region(string name,int pop,int infr,int str,int stab,int wlth)
+Region::Region(string name,int pop,int infr,int str,int stab,int wlth,int seats)
 {
 	regionName = name;
 	basePopulation = pop;
@@ -26,6 +24,7 @@ Region::Region(string name,int pop,int infr,int str,int stab,int wlth)
 	baseStrength = str;
 	baseStability = stab;
 	baseWealth = wlth;
+	baseSeats = seats;
 }
 
 Region::Region()
@@ -45,6 +44,7 @@ void Region::report()
 		<< endl << "Strength: "			<< strength
 		<< endl << "Stability: "		<< stability
 		<< endl << "Wealth: "			<< wealth
+		<< endl << "Seats: "			<< seats
 		<< endl;
 }
 

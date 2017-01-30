@@ -3,6 +3,8 @@ using namespace std;
 
 vector<Region> regionList;
 
+int regionCount = 0;
+
 struct REGIONSTATS {  
     string name;  
     int pop;
@@ -10,6 +12,7 @@ struct REGIONSTATS {
 	int str;
 	int stab;
 	int wlth;
+	int seats;
 } tempStats;
 
 
@@ -29,7 +32,7 @@ int World::Initialise()
 		size_t pos = 0;
 		int statID;
 
-		myfile.open( "regions.txt" );
+		myfile.open( "regions.csv" );
 	  if (myfile)
 		{
 		while (getline( myfile, line ).good())
@@ -59,25 +62,33 @@ int World::Initialise()
 				case 6:
 					tempStats.wlth=stoi(token);
 					break;
+				case 7:
+					tempStats.seats=stoi(token);
+					break;
 				default:
 					cout<<"Regional Read Error"<<endl;
 				}
 				line.erase(0, pos + delimiter.length());
 				statID++;
 			}
-			Region tmpRegion(tempStats.name,tempStats.pop,tempStats.infr,tempStats.str,tempStats.stab,tempStats.wlth);
+			Region tmpRegion(tempStats.name,tempStats.pop,tempStats.infr,tempStats.str,tempStats.stab,tempStats.wlth,tempStats.seats);
 			regionList.push_back(tmpRegion);
+			regionCount++;
 		  }
 		myfile.close();
 		}
 
-	  cout << "read end"<<endl;
+	  cout << "read end ("<<regionCount<<" entries read)"<<endl;
 		
 	  for(int i=0; i < regionList.size(); i++)
 	{
 		regionList[i].Initialise();
 	}
-		
+
+	/*	 for(int i=0; i < regionList.size(); i++)
+	{
+		regionList[i].report();
+	}*/
 		
 
 	cout<<"World created"<<endl;
