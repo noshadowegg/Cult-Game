@@ -109,3 +109,11 @@ void World::getRegionInformation(int whichRegion)
 {
 	 regionList[whichRegion].report();
 }
+
+void World::listRegions()
+{
+	for(int i=0; i < regionList.size(); i++)
+	{
+		cout<< i <<": "<<regionList[i].regionName<<endl;
+	}
+}

@@ -11,5 +11,7 @@ public:
 	~World();
 
 	void getRegionInformation(int whichRegion);
+	void listRegions();
+	vector<Region> regionList;
 };
 

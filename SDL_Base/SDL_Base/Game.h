@@ -11,5 +11,8 @@ public:
 	int Initialise();
 
 	void displayRegionInformation(int whichRegion);
+	int recallRegion();
+	void options();
+
 };
 
